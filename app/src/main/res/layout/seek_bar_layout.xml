@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainSeekBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="540dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginLeft="@dimen/windowIndent"
+        android:layout_marginTop="@dimen/windowIndentTop"
+        android:layout_marginRight="@dimen/windowIndent"
+        android:background="@drawable/seek_bar_custom_layout">
+
+        <RelativeLayout
+            android:id="@+id/forLine"
+            android:layout_width="271dp"
+            android:layout_height="277dp"
+            android:layout_alignBottom="@+id/verticalLine"
+            android:layout_marginStart="-8dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/verticalLine"
+            android:layout_toRightOf="@+id/verticalLine"
+            android:background="@color/backgroundGrid"
+            tools:context=".MainActivity" />
+
+        <View
+            android:id="@+id/verticalLine"
+            android:layout_width="10dp"
+            android:layout_height="277dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/seekBarLine" />
+
+        <View
+            android:id="@+id/horizontalLine"
+            android:layout_width="277dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/verticalLine"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/seekBarLine" />
+
+
+        <ImageView
+            android:id="@+id/thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/horizontalLine"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/verticalLine"
+            android:layout_toRightOf="@+id/verticalLine"
+            app:srcCompat="@drawable/thumb_style" />
+
+
+        <TextView
+            android:id="@+id/textMinutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontalLine"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/calibri"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@+id/textInternet"
+            android:layout_toRightOf="@+id/textInternet"
+            android:text="10гб."
+            android:textColor="@color/seekBarInfoTextColor"
+            android:textSize="@dimen/textMainSize" />
+
+        <TextView
+            android:id="@+id/textInternet"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/calibri"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontalLine"
+            android:layout_alignStart="@+id/horizontalLine"
+            android:layout_alignLeft="@+id/horizontalLine"
+            android:layout_marginStart="-17dp"
+            android:layout_marginLeft="-17dp"
+            android:layout_marginTop="35dp"
+            android:text="100мин."
+            android:textColor="@color/seekBarInfoTextColor"
+            android:textSize="@dimen/textMainSize" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/presentTable"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_below="@+id/mainLayout"
+        android:layout_alignStart="@+id/mainLayout"
+        android:layout_alignLeft="@+id/mainLayout"
+        android:layout_alignEnd="@+id/mainLayout"
+        android:layout_alignRight="@+id/mainLayout"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/windowIndentTop"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/seek_bar_custom_layout"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/presentText"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/present"
+            android:fontFamily="@font/calibri"
+            android:textSize="@dimen/textMainSize"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/vk_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/presentText"
+            android:layout_alignStart="@+id/presentText"
+            android:layout_alignLeft="@+id/presentText"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/vk"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/viber_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/presentText"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/vk_image"
+            android:layout_toRightOf="@+id/vk_image"
+            android:background="@drawable/viber"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/whatsAppImage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/presentText"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/viber_image"
+            android:layout_toRightOf="@+id/viber_image"
+            android:background="@drawable/whatsapp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

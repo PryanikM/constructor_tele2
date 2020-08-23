@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Сonstructor</string>
+    <string name="minutes">мин.</string>
+    <string name="internet">гб.</string>
+    <string name="currensy">р</string>
+    <string name="present">Подарки</string>
+    <string name="next">Далее</string>
+    <string name="pricePerMonth">Р/месяц</string>
+    <string name="pay">Оплатить</string>
+    <string name="SMS">SMS</string>
+</resources>

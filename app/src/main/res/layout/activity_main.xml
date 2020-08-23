@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/countLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="260dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/tele2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_main_activity"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/mainTextMenu" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/cost"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toStartOf="@+id/textViewButton"
+            android:layout_toLeftOf="@+id/textViewButton"
+            android:background="@color/color_white" />
+
+        <TextView
+
+            android:id="@+id/textViewButton"
+            android:layout_width="164dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="-12dp"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/cost"
+            android:layout_toRightOf="@+id/cost"
+            android:background="@drawable/text_main_activity"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/mainTextMenu"
+            android:fontFamily="@font/tele2"
+            android:text="@string/next"
+            app:srcCompat="@android:drawable/dark_header" />
+
+        <ImageView
+            android:id="@+id/imageArrow"
+            android:layout_width="44dp"
+            android:layout_height="41dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="84dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@+id/cost"
+            android:layout_toRightOf="@+id/cost"
+
+
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_side_arrow" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

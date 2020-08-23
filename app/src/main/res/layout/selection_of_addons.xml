@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/SMS"
+        android:layout_width="wrap_content"
+        android:layout_height="188dp"
+        android:layout_marginLeft="@dimen/windowIndent"
+        android:layout_marginTop="@dimen/windowIndentTop"
+        android:layout_marginRight="@dimen/windowIndent"
+        android:background="@drawable/seek_bar_custom_layout"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/quantitySMS3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/SMS1"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/quantitySMS2"
+            android:layout_toRightOf="@+id/quantitySMS2"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/textSizeSelectionBig" />
+
+        <TextView
+            android:id="@+id/costSMS3"
+            android:layout_width="59dp"
+            android:layout_height="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="29dp"
+            android:layout_toEndOf="@+id/costSMS2"
+            android:layout_toRightOf="@+id/costSMS2"
+            android:gravity="center_horizontal|bottom"
+            android:textSize="@dimen/textSizeSelection" />
+
+        <ImageView
+            android:id="@+id/SMS2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/textView"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/SMS1"
+            android:layout_toRightOf="@+id/SMS1"
+            app:srcCompat="@drawable/ic_messages" />
+
+        <ImageView
+            android:id="@+id/SMSinfinity"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginRight="58dp"
+            android:layout_toEndOf="@+id/SMS2"
+            android:layout_toRightOf="@+id/SMS2"
+            app:srcCompat="@drawable/ic_infinity" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/windowIndent"
+            android:layout_marginLeft="@dimen/windowIndent"
+            android:layout_marginTop="@dimen/windowIndentTop"
+            android:text="@string/SMS" />
+
+        <ImageView
+            android:id="@+id/SMS1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="58dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/ic_messages" />
+
+        <TextView
+            android:id="@+id/costSMS1"
+            android:layout_width="59dp"
+            android:layout_height="39dp"
+            android:layout_alignStart="@+id/SMS1"
+            android:layout_alignLeft="@+id/SMS1"
+            android:layout_alignEnd="@+id/SMS1"
+            android:layout_alignRight="@+id/SMS1"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center_horizontal|bottom"
+            android:textSize="@dimen/textSizeSelection" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="29dp"
+            android:gravity="center_horizontal|bottom" />
+
+        <TextView
+            android:id="@+id/costSMS2"
+            android:layout_width="59dp"
+            android:layout_height="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="29dp"
+            android:layout_toEndOf="@+id/costSMS1"
+            android:layout_toRightOf="@+id/costSMS1"
+            android:gravity="center_horizontal|bottom"
+            android:textSize="@dimen/textSizeSelection" />
+
+        <TextView
+            android:id="@+id/quantitySMS1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/SMS1"
+            android:layout_alignStart="@+id/SMS1"
+            android:layout_alignLeft="@+id/SMS1"
+            android:layout_alignEnd="@+id/SMS1"
+            android:layout_alignRight="@+id/SMS1"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="top|center_horizontal"
+            android:textSize="@dimen/textSizeSelectionBig" />
+
+        <TextView
+            android:id="@+id/quantitySMS2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/SMS1"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/quantitySMS1"
+            android:layout_toRightOf="@+id/quantitySMS1"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/textSizeSelectionBig" />
+    </RelativeLayout>
+</RelativeLayout>

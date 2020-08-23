@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="seekBarLine">#3FCBFF</color>
+    <color name="pointCount">#002022</color>
+    <color name="pointCountSelected">#cccccc</color>
+    <color name="pointCountNoSelected">#FFFFFF</color>
+    <color name="textForSeekBar">#8F9399</color>
+    <color name="textSeekBarNoSelected">#8F9399</color>
+    <color name="colorBackgroundSeekBar">#FFFFFF</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="backgroundGrid">#F0F1F2</color>
+    <color name="lineColor">#8F9399</color>
+    <color name="backGround">#F9F9FA</color>
+    <color name="color_dark">#1F2229</color>
+    <color name="seekBarInfoTextColor">#1F2229</color>
+</resources>

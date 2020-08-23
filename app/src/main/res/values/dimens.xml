@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lineWight">2dp</dimen>
+    <dimen name="lineHeight">277dp</dimen>
+    <dimen name="textSize">8dp</dimen>
+    <dimen name="textMainSize">25dp</dimen>
+    <dimen name="correct">7dp</dimen>
+    <dimen name="correctText">5dp</dimen>
+    <dimen name="mainTextMenu">30sp</dimen>
+    <dimen name="windowIndent">20dp</dimen>
+    <dimen name="windowIndentTop">10dp</dimen>
+    <dimen name="textSizeSelection">20sp</dimen>
+    <dimen name="textSizeSelectionBig">25sp</dimen>
+
+</resources>
